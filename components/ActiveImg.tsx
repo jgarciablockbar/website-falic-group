@@ -5,7 +5,7 @@ interface Props {
 }
 
 const ActiveImg = ({ src } : Props) => {
-  return <div className={"absolute w-full h-full overflow-hidden"}>
+  return <div className={"w-full h-full overflow-hidden"}>
     <div style={{ backgroundImage: `url(${src})`}} className="bg-cover bg-center transition ease-in-out duration-300 w-full h-full hover:scale-110" />
   </div>
 }

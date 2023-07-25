@@ -2,7 +2,8 @@ import 'tailwindcss/tailwind.css';
 import './globals.css'
 import { Nunito as Inter } from 'next/font/google'
 
-import Navbar from "../components/navbar"
+import Navbar from '../components/Navbar';
+import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,9 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className} style={{margin: 0}}>
+      <body className={`${inter.className} m-0`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
