@@ -33,35 +33,21 @@ export default function Navbar() {
   ];
 
   return (
-    <div style={{ width: "100%", textAlign: "center" }}>
-      <div style={{ marginTop: 20 }}>
-        <Link href="/" style={{ display: "block", fontSize: 34 }}>
-          Falic Group
-        </Link>
-        <nav
-          style={{
-            textTransform: "uppercase",
-            display: "flex",
-            justifyContent: "space-between",
-            maxWidth: 640,
-            margin: "20px auto 0",
-          }}
-        >
-          {sections.map((section) => (
-            <Link
-              key={section.href}
-              href={section.href}
-              style={{
-                borderBottom:
-                  pathname === section.href ? "1px solid white" : "",
-                paddingBottom: 2,
-              }}
-            >
-              {section.title}
-            </Link>
-          ))}
-        </nav>
-      </div>
+    <div className="absolute w-screen flex justify-center items-center flex-col z-20 pt-6">
+      <Link href="/" style={{ display: "block", fontSize: 34 }}>
+        Falic Group
+      </Link>
+      <nav className="uppercase flex mt-6 mb-0 gap-10">
+        {sections.map((section) => (
+          <Link
+            key={section.href}
+            href={section.href}
+            className={`text-white underline-offset-4 transition ease-in-out duration-300 ${pathname === section.href ? "" : "no-underline"} hover:underline`}
+          >
+            {section.title}
+          </Link>
+        ))}
+      </nav>
     </div>
   );
 }

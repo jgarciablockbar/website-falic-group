@@ -1,6 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   color: white;
-  background: #121426e6;
+  background: #171a32e6;
   margin: 0;
   padding: 0;
 }
