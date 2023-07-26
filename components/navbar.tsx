@@ -8,27 +8,23 @@ const Navbar = () => {
   const sections = [
     {
       href: "/group",
-      title: "Lorem",
+      title: "Group",
     },
     {
       href: "/houses",
-      title: "ipsum ",
+      title: "Houses ",
     },
     {
       href: "/news",
-      title: "dolor",
-    },
-    {
-      href: "/falic-foundation",
-      title: "consectetur",
+      title: "News",
     },
     {
       href: "/offices",
-      title: "adipiscing",
+      title: "Offices",
     },
     {
-      href: "/hr",
-      title: "eiusmod",
+      href: "/careers",
+      title: "Careers",
     },
   ];
   const NavItems = () => sections.map((section) => (
@@ -44,7 +40,7 @@ const Navbar = () => {
   return (
     <div className="absolute w-screen flex justify-center items-center flex-col z-20 pt-6">
       <Link href="/" style={{ display: "block", fontSize: 34 }}>
-        <h1>Lorem</h1>
+        <h1>Falic Group</h1>
       </Link>
       <nav className="uppercase mt-6 mb-0 gap-10 hidden md:flex">
         <NavItems />
