@@ -5,38 +5,8 @@ const Footer = () => {
   const sm = [
     {
       href: "/",
-      title: 'facebook',
-      img: '/icons/facebook.svg'
-    },
-    {
-      href: "/",
-      title: 'twitter',
-      img: '/icons/twitter.svg'
-    },
-    {
-      href: "/",
       title: 'linkedIn',
       img: '/icons/linkedIn.svg'
-    },
-    {
-      href: "/",
-      title: 'youtube',
-      img: '/icons/youtube.svg'
-    },
-    {
-      href: "/",
-      title: 'pinterest',
-      img: '/icons/pinterest.svg'
-    },
-    {
-      href: "/",
-      title: 'instagram',
-      img: '/icons/instagram.svg'
-    },
-    {
-      href: "/",
-      title: 'tiktok',
-      img: '/icons/tiktok.svg'
     },
   ]
 
