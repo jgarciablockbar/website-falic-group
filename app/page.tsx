@@ -22,7 +22,7 @@ const content = {
         href: '/houses',
       }
     ],
-    bgClass: 'bg-sky-500/50'
+    bgClass: 'bg-yellow-600'
   },
   group: {
     title: 'nobis',
