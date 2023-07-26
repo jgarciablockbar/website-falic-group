@@ -6,6 +6,6 @@ interface Props {
   children: ReactNode;
 }
 
-const ButtonA:FC<Props> = ({href, children}) => <Link href={href} target="_self" className="flex p-3 border-2 border-solid border-white hover:bg-white hover:text-black">{children}</Link>
+const ButtonA:FC<Props> = ({href, children}) => <Link href={href} target="_self" className="flex py-3 px-7 border-2 border-solid border-white hover:bg-white hover:text-black">{children}</Link>
 
 export default ButtonA;

@@ -18,8 +18,8 @@ interface Props {
 
 const NewsCardA: FC<Props> = ({title, description, imgSrc, links, bgClass}) => {
 
-  return <div className={`${bgClass || ''} p-20 flex flex-col gap-y-10`}>
-    <Link href={links[0].href} target="_blank" className="block h-80">
+  return <div className={`${bgClass || ''} p-20 flex flex-col gap-y-10 items-start`}>
+    <Link href={links[0].href} target="_blank" className="block h-80 self-stretch">
       <ActiveImg src={imgSrc} />
     </Link>
     <h2>{title}</h2>
