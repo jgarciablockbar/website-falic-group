@@ -14,3 +14,17 @@ a {
   color: white;
   font-weight: 300;
 }
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
