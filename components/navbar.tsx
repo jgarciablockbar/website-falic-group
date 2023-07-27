@@ -8,7 +8,7 @@ const Navbar = () => {
   const sections = [
     {
       href: "/group",
-      title: "Lorem",
+      title: "Group",
     },
     {
       href: "/houses",
@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <div className="absolute w-screen flex justify-center items-center flex-col z-20 pt-6">
       <Link href="/" style={{ display: "block", fontSize: 34 }}>
-        <h1>Lorem</h1>
+        <h1 className="text-white">Falic Group</h1>
       </Link>
       <nav className="uppercase mt-6 mb-0 gap-10 hidden md:flex">
         <NavItems />

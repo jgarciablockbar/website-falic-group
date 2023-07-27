@@ -13,18 +13,18 @@ interface Props {
   description: string;
   imgSrc: string;
   links: link[];
-  bgClass?: string;
+  linkColors?: string;
 }
 
-const NewsCardA: FC<Props> = ({title, description, imgSrc, links, bgClass}) => {
+const NewsCardA: FC<Props> = ({ title, description, imgSrc, links, linkColors }) => {
 
-  return <div className={`${bgClass || ''} p-20 flex flex-col gap-y-10 items-start`}>
+  return <div className="p-20 flex flex-col gap-y-10 items-start">
     <Link href={links[0].href} target="_blank" className="block h-80 self-stretch">
       <ActiveImg src={imgSrc} />
     </Link>
     <h2>{title}</h2>
     <p>{description}</p>
-    {links.map(link => <ButtonA key={link.title} href={link.href}>{link.title}</ButtonA>)}
+    {links.map(link => <ButtonA key={link.title} href={link.href} colors={linkColors}>{link.title}</ButtonA>)}
   </div>
 }
 

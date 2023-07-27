@@ -1,6 +1,6 @@
 import 'tailwindcss/tailwind.css';
 import './globals.css'
-import { Nunito as Inter } from 'next/font/google'
+import { Montserrat as Inter } from 'next/font/google'
 
 import Navbar from '../components/Navbar';
 import Footer from '@/components/Footer';
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} m-0`}>
+      <body className={`${inter.className} m-0 bg-secondary`}>
         <Navbar />
         {children}
         <Footer />
