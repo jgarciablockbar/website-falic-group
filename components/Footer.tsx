@@ -5,43 +5,13 @@ const Footer = () => {
   const sm = [
     {
       href: "/",
-      title: 'facebook',
-      img: '/icons/facebook.svg'
-    },
-    {
-      href: "/",
-      title: 'twitter',
-      img: '/icons/twitter.svg'
-    },
-    {
-      href: "/",
       title: 'linkedIn',
       img: '/icons/linkedIn.svg'
-    },
-    {
-      href: "/",
-      title: 'youtube',
-      img: '/icons/youtube.svg'
-    },
-    {
-      href: "/",
-      title: 'pinterest',
-      img: '/icons/pinterest.svg'
-    },
-    {
-      href: "/",
-      title: 'instagram',
-      img: '/icons/instagram.svg'
-    },
-    {
-      href: "/",
-      title: 'tiktok',
-      img: '/icons/tiktok.svg'
     },
   ]
 
   return <section className="flex flex-col items-center py-20 bg-black text-white">
-    <h2 className="mb-4">Lorem</h2>
+    <h2 className="mb-4">Falic Group</h2>
     <div className="flex gap-4">Follow Lorem on:
       {sm.map(n => <a key={n.title} href={n.href} title={n.title}><Image src={n.img} alt={n.title} width={30} height={30} /></a>)}
     </div>

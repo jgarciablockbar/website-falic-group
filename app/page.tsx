@@ -13,7 +13,7 @@ const content = {
     link: '/',
   },
   houses: {
-    title: 'accusamus',
+    title: 'Houses',
     imgSrc: 'https://loremflickr.com/1000/720/mexico',
     description: 't vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.',
     links: [
@@ -22,11 +22,9 @@ const content = {
         href: '/houses',
       }
     ],
-    linkFg: 'black',
-    linkBg: 'white',
   },
   group: {
-    title: 'nobis',
+    title: 'Group',
     imgSrc: 'https://loremflickr.com/1000/720/washington',
     description: 'Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis.',
     links: [

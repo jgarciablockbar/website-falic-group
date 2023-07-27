@@ -12,23 +12,19 @@ const Navbar = () => {
     },
     {
       href: "/houses",
-      title: "ipsum ",
+      title: "Houses ",
     },
     {
       href: "/news",
-      title: "dolor",
-    },
-    {
-      href: "/falic-foundation",
-      title: "consectetur",
+      title: "News",
     },
     {
       href: "/offices",
-      title: "adipiscing",
+      title: "Offices",
     },
     {
-      href: "/hr",
-      title: "eiusmod",
+      href: "/careers",
+      title: "Careers",
     },
   ];
   const NavItems = () => sections.map((section) => (
