@@ -22,7 +22,12 @@ const content = {
         href: '/houses',
       }
     ],
+<<<<<<< HEAD
     bgClass: 'bg-yellow-600'
+=======
+    linkFg: 'black',
+    linkBg: 'white',
+>>>>>>> 5c5a0cc (feat: group page, style and content)
   },
   group: {
     title: 'Group',
@@ -33,7 +38,16 @@ const content = {
         title: 'Find out more',
         href: '/group',
       },
+<<<<<<< HEAD
     ]
+=======
+      {
+        title: 'Documentation',
+        href: '/documentation',
+      }
+    ],
+    linkColors: 'text-secondary border-secondary hover:text-primary hover:bg-secondary',
+>>>>>>> 5c5a0cc (feat: group page, style and content)
   }
 }
 
@@ -48,10 +62,10 @@ export default function Home() {
         <CardA {...content.news} />
       </section>
       <section className="flex flex-col md:flex-row">
-        <div className="w-full flex">
+        <div className="w-full flex bg-white">
           <CardB {...content.houses} />
         </div>
-        <div className="w-full flex">
+        <div className="w-full flex bg-primary text-secondary">
           <CardB {...content.group} />
         </div>
       </section>
