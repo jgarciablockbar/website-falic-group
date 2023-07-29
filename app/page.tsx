@@ -32,10 +32,6 @@ const content = {
         title: 'Find out more',
         href: '/group',
       },
-      {
-        title: 'Documentation',
-        href: '/documentation',
-      }
     ],
     linkColors: 'text-secondary border-secondary hover:text-primary hover:bg-secondary',
   }
