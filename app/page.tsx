@@ -22,7 +22,6 @@ const content = {
         href: '/houses',
       }
     ],
-    bgClass: 'bg-yellow-600'
   },
   group: {
     title: 'Group',
@@ -33,7 +32,8 @@ const content = {
         title: 'Find out more',
         href: '/group',
       },
-    ]
+    ],
+    linkColors: 'text-secondary border-secondary hover:text-primary hover:bg-secondary',
   }
 }
 
@@ -48,10 +48,10 @@ export default function Home() {
         <CardA {...content.news} />
       </section>
       <section className="flex flex-col md:flex-row">
-        <div className="w-full flex">
+        <div className="w-full flex bg-white">
           <CardB {...content.houses} />
         </div>
-        <div className="w-full flex">
+        <div className="w-full flex bg-primary text-secondary">
           <CardB {...content.group} />
         </div>
       </section>
