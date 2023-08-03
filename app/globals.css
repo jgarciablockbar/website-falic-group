@@ -32,3 +32,9 @@ h3 {
   font-size: 1.2rem;
   text-transform: uppercase;
 }
+
+.hideBgSm {
+  @media (max-width: 767px) {
+    background-image: none!important;
+  }
+}
