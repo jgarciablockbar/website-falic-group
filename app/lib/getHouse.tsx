@@ -1,7 +1,8 @@
 import { ObjectType } from "typescript";
 
-const data = {
-  wines: {
+const data = [
+  {
+    hid: 'wines-and-spirits',
     heroBg: 'https://loremflickr.com/1000/720/newyork',
     title: 'Wines & Spirits',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
@@ -75,7 +76,8 @@ const data = {
       ]
     }
   },
-  retailing: {
+  {
+    hid: 'retailing',
     title: 'Retailing',
     heroBg: '',
     desc: '',
@@ -99,7 +101,8 @@ const data = {
       ]
     }
   },
-  fragance: {
+  {
+    hid: 'fragance-and-cosmetics',
     title: 'Fragance & Cosmetics',
     heroBg: '',
     desc: '',
@@ -123,7 +126,8 @@ const data = {
       ]
     }
   },
-  fashion: {
+  {
+    hid: 'fashion-and-interiors',
     title: 'Fashion & Interiors',
     heroBg: '',
     desc: '',
@@ -147,7 +151,8 @@ const data = {
       ]
     }
   },
-  realEstate: {
+  {
+    hid: 'real-estate-and-hospitality',
     title: 'Real Estate & Hospitality',
     heroBg: '',
     desc: '',
@@ -171,7 +176,8 @@ const data = {
       ]
     }
   },
-  media: {
+  {
+    hid: 'media',
     title: 'Media',
     heroBg: '',
     desc: '',
@@ -195,7 +201,8 @@ const data = {
       ]
     }
   },
-  distribution: {
+  {
+    hid: 'distribution',
     title: 'Distribution',
     heroBg: '',
     desc: '',
@@ -219,7 +226,8 @@ const data = {
       ]
     }
   },
-  tobacco: {
+  {
+    hid: 'tobacco',
     title: 'Tobacco',
     heroBg: '',
     desc: '',
@@ -243,7 +251,8 @@ const data = {
       ]
     }
   },
-  other: {
+  {
+    hid: 'other-activities',
     title: 'Other Activities',
     heroBg: '',
     desc: '',
@@ -267,10 +276,21 @@ const data = {
       ]
     }
   }
-}
+]
 
 const getHouse = (hid : string) => {
-  return data[hid as keyof typeof data] || null;
+  return data.find(house => house.hid === hid) || null;
+}
+
+export const getHouses = () => {
+  return data.map(house => {
+    return {
+      heroBg: house.heroBg,
+      hid: house.hid,
+      title: house.title,
+      desc: house.desc
+    }
+  });
 }
 
 export default getHouse;

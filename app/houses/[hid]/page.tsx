@@ -9,8 +9,10 @@ interface Params {
 
 const House = ({ params: { hid }}: Params) => {
   const house = getHouse(hid);
+
+  if (!house) return <div>Nothing to see here</div>
+
   return <main>
-    {house ? <>
       <section style={{ backgroundImage: `url('${house.heroBg})` }} className='bg-cover w-screen h-screen flex flex-col justify-center text-center items-center'>
         <h1 className='text-white'>{house.title}</h1>
         <hr className="mb-12 mt-6 w-12 border-white"/>
@@ -45,8 +47,6 @@ const House = ({ params: { hid }}: Params) => {
           })}
         </div>
       </section>
-    </>:
-    <div>Nothing to see here</div>}
   </main>
 }
 
