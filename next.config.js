@@ -3,6 +3,7 @@ const nextConfig = {
   images: {
     domains: [
       'r.lvmh-static.com',
+      'loremflickr.com',
     ],
   },
 }
