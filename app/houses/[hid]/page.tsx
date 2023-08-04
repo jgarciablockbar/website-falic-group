@@ -3,7 +3,7 @@ import CardE from "@/components/CardE";
 
 export async function generateStaticParams() {
   const houses = getHouses();
-  return houses.map(house => house.hid);
+  return houses.map(house => ({hid: house.hid}));
 }
 
 interface Params {
