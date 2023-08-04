@@ -1,5 +1,3 @@
-import { ObjectType } from "typescript";
-
 const data = [
   {
     hid: 'wines-and-spirits',
@@ -78,8 +76,8 @@ const data = [
   },
   {
     hid: 'retailing',
+    heroBg: 'https://loremflickr.com/1000/720/newyork',
     title: 'Retailing',
-    heroBg: '',
     desc: '',
     quote: '',
     author: '',
@@ -103,8 +101,8 @@ const data = [
   },
   {
     hid: 'fragance-and-cosmetics',
+    heroBg: 'https://loremflickr.com/1000/720/newyork',
     title: 'Fragance & Cosmetics',
-    heroBg: '',
     desc: '',
     quote: '',
     author: '',
@@ -128,8 +126,8 @@ const data = [
   },
   {
     hid: 'fashion-and-interiors',
+    heroBg: 'https://loremflickr.com/1000/720/newyork',
     title: 'Fashion & Interiors',
-    heroBg: '',
     desc: '',
     quote: '',
     author: '',
@@ -153,8 +151,8 @@ const data = [
   },
   {
     hid: 'real-estate-and-hospitality',
+    heroBg: 'https://loremflickr.com/1000/720/newyork',
     title: 'Real Estate & Hospitality',
-    heroBg: '',
     desc: '',
     quote: '',
     author: '',
@@ -178,8 +176,8 @@ const data = [
   },
   {
     hid: 'media',
+    heroBg: 'https://loremflickr.com/1000/720/newyork',
     title: 'Media',
-    heroBg: '',
     desc: '',
     quote: '',
     author: '',
@@ -203,8 +201,8 @@ const data = [
   },
   {
     hid: 'distribution',
+    heroBg: 'https://loremflickr.com/1000/720/newyork',
     title: 'Distribution',
-    heroBg: '',
     desc: '',
     quote: '',
     author: '',
@@ -228,8 +226,8 @@ const data = [
   },
   {
     hid: 'tobacco',
+    heroBg: 'https://loremflickr.com/1000/720/newyork',
     title: 'Tobacco',
-    heroBg: '',
     desc: '',
     quote: '',
     author: '',
@@ -253,8 +251,8 @@ const data = [
   },
   {
     hid: 'other-activities',
+    heroBg: 'https://loremflickr.com/1000/720/newyork',
     title: 'Other Activities',
-    heroBg: '',
     desc: '',
     quote: '',
     author: '',
