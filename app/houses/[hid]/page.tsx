@@ -1,5 +1,10 @@
-import getHouse from "@/app/lib/getHouse";
-import Image from "next/image";
+import getHouse, { getHouses } from "@/app/lib/getHouse";
+import CardE from "@/components/CardE";
+
+export async function generateStaticParams() {
+  const houses = getHouses();
+  return houses.map(house => ({hid: house.hid}));
+}
 
 interface Params {
   params: {
@@ -23,12 +28,8 @@ const House = ({ params: { hid }}: Params) => {
         <h3 className="pb-20">{house.author}</h3>
         <div className="w-5/6 flex flex-wrap md:w-2/3">
           {house.brands.map(brand => {
-            return <div key={brand.title} className='basis-full md:basis-1/3 p-5 text-center'>
-              <div className="h-56 relative mb-5">
-                <Image src={brand.img} alt={brand.title} fill />
-              </div>
-              <h3>{brand.title}</h3>
-              <h4>{brand.date}</h4>
+            return <div key={brand.title} className='basis-full md:basis-1/3 p-5'>
+              <CardE {...brand} />
             </div>
           })}
         </div>
@@ -37,12 +38,8 @@ const House = ({ params: { hid }}: Params) => {
         <h2 className="mb-5">{house.otherSectors.title}</h2>
         <div className="w-5/6 flex flex-wrap md:w-2/3">
           {house.otherSectors.brands.map(brand => {
-            return <div key={brand.title} className='basis-full md:basis-1/3 p-5 text-center'>
-              <div className="h-56 relative mb-5">
-                <Image src={brand.img} alt={brand.title} fill />
-              </div>
-              <h3>{brand.title}</h3>
-              <h4>{brand.date}</h4>
+            return <div key={brand.title} className='basis-full md:basis-1/3 p-5'>
+              <CardE {...brand} />
             </div>
           })}
         </div>

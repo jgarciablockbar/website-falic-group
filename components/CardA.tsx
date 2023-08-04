@@ -9,7 +9,7 @@ interface Props {
   link: string;
 }
 
-const NewsCardA: FC<Props> = ({title, date, imgSrc, link}) => {
+const CardA: FC<Props> = ({title, date, imgSrc, link}) => {
 
   return <div className="flex flex-col gap-y-10">
     <h4>{date}</h4>
@@ -20,4 +20,4 @@ const NewsCardA: FC<Props> = ({title, date, imgSrc, link}) => {
   </div>
 }
 
-export default NewsCardA;
+export default CardA;

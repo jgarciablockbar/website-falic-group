@@ -16,7 +16,7 @@ interface Props {
   linkColors?: string;
 }
 
-const NewsCardA: FC<Props> = ({ title, description, imgSrc, links, linkColors }) => {
+const CardA: FC<Props> = ({ title, description, imgSrc, links, linkColors }) => {
 
   return <div className="p-20 flex flex-col gap-y-10 items-start">
     <Link href={links[0].href} target="_blank" className="block h-80 self-stretch">
@@ -28,4 +28,4 @@ const NewsCardA: FC<Props> = ({ title, description, imgSrc, links, linkColors })
   </div>
 }
 
-export default NewsCardA;
+export default CardA;
