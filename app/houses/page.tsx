@@ -3,12 +3,6 @@ import HeroB from "@/components/HeroB";
 import ButtonA from "@/components/ButtonA";
 import { getHouses } from "../lib/getHouse";
 
-// export async function generateStaticParams() {
-//   const houses = getHouses();
-//   return houses.map(house => house.link.url);
-// }
-
-
 const data = {
   hero: [
     {
