@@ -35,7 +35,7 @@ const values = [
   }
 ]
 
-export default function Home() {
+export default function Group() {
   return (
     <main>
       <Hero bg="https://loremflickr.com/1000/720/newyork">
@@ -45,7 +45,7 @@ export default function Home() {
           Renowned for its unrivaled global expertise and commitment to excellence,
           The Falic Group founded in 2001 is a family run group and operates 50 prestigious enterprises across 9 houses;
           retailing, wine & spirits, perfume & cosmetics, fashion & interiors, real estate & hospitality, media, distribution, tobacco & other activities.
-          With over 6,000 employees spanning 21 countries, their global eco-system encompasses 250+ retail and e-Commerce stores. 
+          With over 6,000 employees spanning 21 countries, their global eco-system encompasses 250+ retail and e-Commerce stores.
         </p>
         <div className="flex place-content-evenly w-full">
           {stats.map(s => <div key={s.desc} className="flex flex-col items-center">
