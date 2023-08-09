@@ -1,7 +1,7 @@
 const data = [
   {
     hid: 'wines-and-spirits',
-    heroBg: 'https://loremflickr.com/1000/720/newyork',
+    heroBg: '/houses/wines-spirits.png',
     title: 'Wines & Spirits',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
     quote: 'empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
@@ -101,7 +101,7 @@ const data = [
   },
   {
     hid: 'fragance-and-cosmetics',
-    heroBg: 'https://loremflickr.com/1000/720/newyork',
+    heroBg: '/houses/cosmetics-fragrance.jpg',
     title: 'Fragance & Cosmetics',
     desc: '',
     quote: '',

@@ -18,7 +18,7 @@ const House = ({ params: { hid }}: Params) => {
   if (!house) return <div>Nothing to see here</div>
 
   return <main>
-      <section style={{ backgroundImage: `url('${house.heroBg})` }} className='bg-cover w-screen h-screen flex flex-col justify-center text-center items-center'>
+      <section style={{ backgroundImage: `url('${house.heroBg}')` }} className='bg-cover w-screen h-screen flex flex-col justify-center text-center items-center'>
         <h1 className='text-white'>{house.title}</h1>
         <hr className="mb-12 mt-6 w-12 border-white"/>
         <p className='text-white w-5/6 md:w-1/3'>{house.desc}</p>
