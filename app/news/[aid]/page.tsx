@@ -25,7 +25,6 @@ const Article = ({ params: { aid }}: Params) => {
         <Image src={article.img} fill alt={article.title} />
       </div>
       <div className="w-5/6 bg-white p-20 flex flex-col gap-y-20 items-center text-left font-xl" dangerouslySetInnerHTML={{__html: article.desc}}>
-        {}
       </div>
     </section>
   </main>
