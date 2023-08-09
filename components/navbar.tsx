@@ -2,8 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FC } from "react";
 
-const Navbar = () => {
+interface Props {
+  seeThru?: boolean;
+}
+
+const Navbar: FC<Props> = ({ seeThru }: Props) => {
   const pathname = usePathname();
   const sections = [
     {
@@ -38,7 +43,7 @@ const Navbar = () => {
     ));
 
   return (
-    <div className="absolute w-screen flex justify-center items-center flex-col z-20 pt-6">
+    <div className={`${seeThru ? 'absolute' : 'relative bg-black pb-6'} w-screen flex justify-center items-center flex-col z-20 pt-6`}>
       <Link href="/" style={{ display: "block", fontSize: 34 }}>
         <h1 className="text-white">Falic Group</h1>
       </Link>

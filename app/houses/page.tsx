@@ -37,7 +37,7 @@ const Houses = () => {
           })}
         </div>
       </HeroB>
-      {houses.map((house, i) => {
+      {houses && houses.map((house, i) => {
         return <div key={house.hid}>
         <CardD  bgColor={i % 2 === 0 ? 'bg-primary' : 'bg-secondary'} bgImg={house.heroBg}>
           <h2 className="text-center text-white bg-black/75 py-3 w-5/6 md:py-5 md:w-full">{house.title}</h2>
