@@ -35,16 +35,6 @@ const House = ({ params: { hid }}: Params) => {
           })}
         </div>
       </section>
-      {/* <section className="bg-secondary flex flex-col items-center py-20 justify-center">
-        <h2 className="mb-5">{house.otherSectors.title}</h2>
-        <div className="w-5/6 flex flex-wrap md:w-2/3">
-          {house.otherSectors.brands.map(brand => {
-            return <div key={brand.title} className='basis-full md:basis-1/3 p-5'>
-              <CardE {...brand} />
-            </div>
-          })}
-        </div>
-      </section> */}
       <section className="bg-primary text-white flex flex-col p-10 md:p-20 gap-y-12 text-center justify-center items-center">
         <h2>Falic group partners</h2>
         <p className="w-1/2">
