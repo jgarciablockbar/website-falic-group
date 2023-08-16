@@ -1,3 +1,4 @@
+import Image from "next/image";
 import getHouse, { getHouses } from "@/app/lib/getHouse";
 import CardE from "@/components/CardE";
 
@@ -34,7 +35,7 @@ const House = ({ params: { hid }}: Params) => {
           })}
         </div>
       </section>
-      <section className="bg-secondary flex flex-col items-center py-20 justify-center">
+      {/* <section className="bg-secondary flex flex-col items-center py-20 justify-center">
         <h2 className="mb-5">{house.otherSectors.title}</h2>
         <div className="w-5/6 flex flex-wrap md:w-2/3">
           {house.otherSectors.brands.map(brand => {
@@ -42,6 +43,15 @@ const House = ({ params: { hid }}: Params) => {
               <CardE {...brand} />
             </div>
           })}
+        </div>
+      </section> */}
+      <section className="bg-primary text-white flex flex-col p-10 md:p-20 gap-y-12 text-center justify-center items-center">
+        <h2>Falic group partners</h2>
+        <p className="w-1/2">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+        </p>
+        <div className="w-full h-v70 relative">
+          <Image src="https://loremflickr.com/1000/720/newyork" alt="" fill className="object-cover" />
         </div>
       </section>
   </main>

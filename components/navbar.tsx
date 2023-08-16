@@ -37,14 +37,14 @@ const Navbar: FC<Props> = ({ seeThru }: Props) => {
       <Link
         key={section.href}
         href={section.href}
-        className={`font-semibold text-white underline-offset-4 transition ease-in-out duration-300 ${pathname === section.href ? "" : "no-underline"} hover:underline`}
+        className={`font-semibold text-primary underline-offset-4 transition ease-in-out duration-300 ${pathname === section.href ? "" : "no-underline"} hover:underline`}
       >
         {section.title}
       </Link>
     ));
 
   return (
-    <div className={`${seeThru ? 'absolute' : 'relative bg-black pb-6'} w-screen flex justify-center items-center flex-col z-20 pt-6`}>
+    <div className="relative bg-white pb-6 w-screen flex justify-center items-center flex-col z-20 pt-6">
       <Link href="/" style={{ display: "block", fontSize: 34 }}>
         <Image src="/logo.png" alt="Falic Group" width={300} height={100} />
       </Link>

@@ -48,7 +48,7 @@ export default function Home() {
         <CardA {...content.news} />
       </section>
       <section className="flex flex-col md:flex-row">
-        <div className="w-full flex bg-white">
+        <div className="w-full flex bg-secondary">
           <CardB {...content.houses} />
         </div>
         <div className="w-full flex bg-primary text-secondary">

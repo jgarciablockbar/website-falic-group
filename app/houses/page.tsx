@@ -1,21 +1,16 @@
-import CardD from "@/components/CardD";
 import HeroB from "@/components/HeroB";
-import ButtonA from "@/components/ButtonA";
 import { getHouses } from "../lib/getHouse";
+import ActiveImg from "@/components/ActiveImg";
 
 const data = {
   hero: [
     {
-      num: '31',
-      text: 'Lorem Ipsum'
+      num: '9',
+      text: 'Houses'
     },
     {
-      num: '75',
-      text: 'Ipsum'
-    },
-    {
-      num: '6',
-      text: 'consectetur adipiscing elit'
+      num: '50',
+      text: 'Enterprices'
     },
   ],
 }
@@ -25,9 +20,9 @@ const Houses = () => {
   return (
     <main>
       <HeroB bg="https://loremflickr.com/1000/720/newyork">
-        <h1 className="bg-black/75 py-3 text-center w-full">Houses</h1>
-        <p className="w-5/6 md:w-1/2 bg-black/75 p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <div className="flex place-content-around  w-5/6">
+        <h1 className="bg-black/75 py-3 text-center w-screen -ml-10 md:-ml-20">Houses</h1>
+        <p className="w-5/6 md:w-1/2 bg-black/75 p-3 -ml-10 md:-ml-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <div className="flex place-content-around  w-5/6 -ml-10 md:-ml-20">
           {data.hero.map(item => {
             return <div key={item.num} className="bg-black/75 py-3 px-5 text-center">
               <h2>{item.num}</h2>
@@ -37,15 +32,20 @@ const Houses = () => {
           })}
         </div>
       </HeroB>
-      {houses && houses.map((house, i) => {
-        return <div key={house.hid}>
-        <CardD  bgColor={i % 2 === 0 ? 'bg-primary' : 'bg-secondary'} bgImg={house.heroBg}>
-          <h2 className="text-center text-white bg-black/75 py-3 w-5/6 md:py-5 md:w-full">{house.title}</h2>
-          <p className="text-center text-white bg-black/75 py-3 w-5/6 p-3 md:w-1/3">{house.desc}</p>
-          <ButtonA href={`/houses/${house.hid}`} colors="border-black text-black bg-secondary hover:bg-black hover:text-white md:justify-self-end">Discover the Sector and Houses</ButtonA>
-        </CardD>
+      <section className='bg-white flex flex-col items-center py-20 justify-center'>
+        <div className="w-5/6 flex flex-wrap lg:w-2/3">
+        {houses && houses.map((house, i) => {
+          return <a href={`/houses/${house.hid}`} key={house.title} className='basis-full lg:basis-1/3 p-5 text-center'>
+            <div className="h-80 lg:h-52 relative mb-5">
+              <ActiveImg src={house.heroBg} />
+            </div>
+            <h3>{house.title}</h3>
+            <p>{house.since}</p>
+          </a>
+        })}
         </div>
-      })}
+      </section>
+
     </main>
   )
 }
