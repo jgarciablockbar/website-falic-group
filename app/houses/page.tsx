@@ -35,8 +35,8 @@ const Houses = () => {
       <section className='bg-white flex flex-col items-center py-20 justify-center'>
         <div className="w-5/6 flex flex-wrap lg:w-2/3">
         {houses && houses.map((house, i) => {
-          return <a href={`/houses/${house.hid}`} key={house.title} className='basis-full lg:basis-1/3 p-5 text-center'>
-            <div className="h-80 lg:h-52 relative mb-5">
+          return <a href={`/houses/${house.hid}`} key={house.title} className='basis-full md:basis-1/3 p-5 text-center text-primary'>
+            <div className="h-80 md:h-40 relative mb-5">
               <ActiveImg src={house.heroBg} />
             </div>
             <h3>{house.title}</h3>
