@@ -22,7 +22,7 @@ const Article = ({ params: { aid }}: Params) => {
       <h1 className="w-3/4 mt-20">{article.title}</h1>
       <h2 className="text-gray-500 mb-20">{article.category} • {article.date}</h2>
       <div className="w-5/6 h-screen relative">
-        <Image src={article.img} fill alt={article.title} />
+        <Image src={article.img} fill alt={article.title} className="object-cover"/>
       </div>
       <div className="w-5/6 bg-white p-20 flex flex-col gap-y-20 items-center text-left font-xl" dangerouslySetInnerHTML={{__html: article.desc}}>
       </div>
