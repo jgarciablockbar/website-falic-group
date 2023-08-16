@@ -2,7 +2,7 @@ import 'tailwindcss/tailwind.css';
 import './globals.css'
 import { Montserrat as Inter } from 'next/font/google'
 
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/navbar';
 import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
