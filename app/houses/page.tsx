@@ -26,7 +26,7 @@ const Houses = () => {
           {data.hero.map(item => {
             return <div key={item.num} className="bg-black/75 py-3 px-5 text-center">
               <h2>{item.num}</h2>
-              <h3>item.text</h3>
+              <h3>{item.text}</h3>
               <hr className="w-12 mt-3" />
             </div>
           })}
