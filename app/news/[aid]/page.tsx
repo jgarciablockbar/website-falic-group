@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export async function generateStaticParams() {
   const news = getNews();
-  return news.map(article => ({hid: article.aid}));
+  return news.map(article => ({aid: article.aid}));
 }
 
 interface Params {
