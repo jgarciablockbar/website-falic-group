@@ -10,8 +10,30 @@ module.exports = {
       colors: {
         primary: 'rgb(var(--color-primary)/<alpha-value>)',
         secondary: 'rgb(var(--color-secondary)/<alpha-value>)',
-      }
-    }
+      },
+      minHeight: {
+          v10: "10vh",
+          v20: "20vh",
+          v30: "30vh",
+          v40: "40vh",
+          v50: "50vh",
+          v60: "60vh",
+          v70: "70vh",
+          v80: "80vh",
+          v90: "90vh",
+        },
+      height: {
+          v10: "10vh",
+          v20: "20vh",
+          v30: "30vh",
+          v40: "40vh",
+          v50: "50vh",
+          v60: "60vh",
+          v70: "70vh",
+          v80: "80vh",
+          v90: "90vh",
+        },
+    },
   },
   plugins: [],
 }

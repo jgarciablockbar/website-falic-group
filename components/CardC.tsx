@@ -11,7 +11,7 @@ const CardC: FC<Props> = ({ img, title }) => {
     <div className="w-full h-48">
       <ActiveImg src={img} />
     </div>
-    <h3 className="w-full flex items-center text-center justify-center py-12 px-8 bg-white font-semibold">{title}</h3>
+    <h3 className="w-full flex items-center text-center justify-center py-12 px-8 bg-primary font-semibold text-white">{title}</h3>
   </div>
 }
 

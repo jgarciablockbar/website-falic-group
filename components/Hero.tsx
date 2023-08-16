@@ -6,13 +6,13 @@ interface Props {
   children?: ReactNode;
 }
 const Hero: FC<Props> = ({bg, children}) => {
-  return <section className="w-full h-full flex">
+  return <section className="w-full h-v80 flex justify-center items-center px-10 md:px-20">
     {bg &&
-      <Link  href="/" className="z-0 absolute w-full h-full block">
+      <Link href="/" className="z-0 absolute w-full h-v80 block">
         <ActiveImg src={bg}/>
       </Link>
     }
-    <div className="z-10 flex h-screen w-full flex-col justify-center items-center text-white pointer-events-none">
+    <div className="z-10 flex h-full w-full flex-col justify-center items-center text-white pointer-events-none">
       {children}
     </div>
   </section>

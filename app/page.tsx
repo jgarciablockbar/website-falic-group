@@ -44,11 +44,11 @@ export default function Home() {
         <h1 className="text-center">{content.hero.title}</h1>
       </Hero>
       <section className="p-20">
-        <h2>News</h2>
+        <h2 className="text-primary">News</h2>
         <CardA {...content.news} />
       </section>
       <section className="flex flex-col md:flex-row">
-        <div className="w-full flex bg-white">
+        <div className="w-full flex bg-secondary">
           <CardB {...content.houses} />
         </div>
         <div className="w-full flex bg-primary text-secondary">
