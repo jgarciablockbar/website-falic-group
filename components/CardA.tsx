@@ -12,7 +12,7 @@ interface Props {
 const CardA: FC<Props> = ({title, date, imgSrc, link}) => {
 
   return <div className="flex flex-col gap-y-10">
-    <h4>{date}</h4>
+    <h4 className="text-primary">{date}</h4>
     <h3>{title}</h3>
     <Link href={link} target="_blank" className="block w-full h-screen">
       <ActiveImg src={imgSrc} />

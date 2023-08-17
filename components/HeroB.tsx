@@ -5,8 +5,10 @@ interface Props {
   children?: ReactNode;
 }
 const HeroB: FC<Props> = ({bg, children}) => {
-  return <section style={{backgroundImage: `url('${bg}')`}} className="w-full h-screen bg-cover z-10 flex flex-col justify-center items-center text-white gap-y-6">
-    {children}
+  return <section style={{ backgroundImage: `url(${bg})` }} className='bg-cover bg-center w-screen min-h-v70 h-fit flex items-center p-10 md:p-20'>
+    <div className="text-white gap-y-8 flex flex-col justify-around items-center text-center">
+      {children}
+    </div>
   </section>
 }
 export default HeroB;
