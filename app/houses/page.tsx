@@ -19,7 +19,7 @@ const Houses = () => {
   const houses = getHouses();
   return (
     <main>
-      <HeroB bg="https://loremflickr.com/1000/720/newyork">
+      <HeroB bg="/homepage/houses.webp">
         <h1 className="bg-black/75 py-3 text-center w-screen -ml-10 md:-ml-20">Houses</h1>
         <p className="w-5/6 md:w-1/2 bg-black/75 p-3 -ml-10 md:-ml-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         <div className="flex place-content-around  w-5/6 -ml-10 md:-ml-20">

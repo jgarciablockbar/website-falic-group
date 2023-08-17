@@ -1,4 +1,3 @@
-import ButtonA from "@/components/ButtonA";
 import CardC from "@/components/CardC";
 import HeroB from "@/components/HeroB";
 
@@ -47,8 +46,8 @@ const values = [
 
 export default function Group() {
   return (<>
-      <HeroB>
-          <h1>Group</h1>
+      <HeroB bg="/homepage/group.webp">
+          <h1>Group1</h1>
           <hr className="w-12"/>
           <p className="w-4/5 text-center md:w-1/2 lg:w-1/3 mb-12">
             Renowned for its unrivaled global expertise and commitment to excellence,
