@@ -21,7 +21,7 @@ const Houses = () => {
     <main>
       <HeroB bg="/homepage/houses.webp">
         <h1 className="bg-black/75 py-3 text-center w-screen -ml-10 md:-ml-20">Houses</h1>
-        <p className="w-5/6 md:w-1/2 bg-black/75 p-3 -ml-10 md:-ml-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <p className="w-5/6 md:w-1/2 bg-black/75 p-3 -ml-10 md:-ml-20">Our 9 global Houses encompass heritage, innovation and luxury.</p>
         <div className="flex place-content-around  w-5/6 -ml-10 md:-ml-20">
           {data.hero.map(item => {
             return <div key={item.num} className="bg-black/75 py-3 px-5 text-center">
@@ -40,7 +40,7 @@ const Houses = () => {
               <ActiveImg src={house.heroBg} />
             </div>
             <h3>{house.title}</h3>
-            <p>{house.since}</p>
+            <p style={{color: 'black'}}>{house.since}</p>
           </a>
         })}
         </div>
