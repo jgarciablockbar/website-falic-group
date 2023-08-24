@@ -15,7 +15,7 @@ const content = {
   houses: {
     title: 'Houses',
     imgSrc: '/homepage/houses.webp',
-    description: 't vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.',
+    description: 'Our 9 global Houses encompass heritage, innovation and luxury.',
     links: [
       {
         title: 'Learn more',
@@ -26,7 +26,11 @@ const content = {
   group: {
     title: 'Group',
     imgSrc: '/homepage/group.webp',
-    description: 'Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis.',
+    description: `Established in 2001, Falic Group is a family-owned and operated business home 
+    to a number of prestigious brands across nine Houses. Known for our unrivalled 
+    expertise in global markets and commitment to excellence, Falic Group is 
+    committed to growth and innovation in the name of our Houses and affiliated 
+    high quality producers.`,
     links: [
       {
         title: 'Find out more',

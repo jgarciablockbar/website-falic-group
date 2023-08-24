@@ -32,7 +32,7 @@ const stats = [
 const values = [
   {
     img: 'https://loremflickr.com/400/200/newyork',
-    title: 'Collaborative & Global'
+    title: 'A collaborative approach'
   },
   {
     img: 'https://loremflickr.com/400/200/brooklyn',
@@ -47,7 +47,7 @@ const values = [
 export default function Group() {
   return (<>
       <HeroB bg="/homepage/group.webp">
-          <h1>Group1</h1>
+          <h1>Falic Group</h1>
           <hr className="w-12"/>
           <p className="w-4/5 text-center md:w-1/2 lg:w-1/3 mb-12">
             Renowned for its unrivaled global expertise and commitment to excellence,
