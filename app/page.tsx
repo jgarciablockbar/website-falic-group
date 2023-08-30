@@ -15,7 +15,7 @@ const content = {
   houses: {
     title: 'Houses',
     imgSrc: '/homepage/houses.webp',
-    description: 'Our 9 global Houses encompass heritage, innovation and luxury.',
+    description: 'Across our 9 distinguished global Houses, we proudly encapsulate a rich tapestry of heritage, boundless innovation, and unparalleled luxury.',
     links: [
       {
         title: 'Learn more',
