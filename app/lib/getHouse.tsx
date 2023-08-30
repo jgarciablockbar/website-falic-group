@@ -3,10 +3,7 @@ const data = [
     hid: 'retail',
     heroBg: 'https://loremflickr.com/1000/720/newyork',
     title: 'Retail',
-    since: `Combining legacy and innovation, Duty Free Americas is our mothership; our 
-    ground zero. Offering a way for high-quality producers to access the American 
-    market, Duty Free Americas is the seed from which all Falic Group business 
-    endeavours grew. If Duty Free Americas is our foundation, our future is our 
+    since: `Combining legacy and innovation, Duty Free Americas is our mothership, our future is our 
     digital retail innovations, including BlockBar and Paneco.`,
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
     quote: 'empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
@@ -84,7 +81,7 @@ const data = [
     heroBg: '/houses/wines-spirits.png',
     title: 'Wines & Spirits',
     since: `Expertise and exceptional terroir are the hallmarks of our prestigious estates 
-    from the world’s iconic regions`,
+    from the world’s iconic regions.`,
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod',
     quote: 'empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     author: 'sit voluptatem accusantium natus erro',
@@ -214,8 +211,7 @@ const data = [
     heroBg: 'https://loremflickr.com/1000/720/newyork',
     title: 'Real Estate & Hospitality',
     since: `Falic Group owns a number of hotels in the United States and Latin America 
-    including the W Hotel Panama. A striking cotemporary hotel located in the city’s 
-    business and culture district. A place to meet, rest and play.`,
+    including the W Hotel Panama. A place to meet, rest and play.`,
     desc: '',
     quote: '',
     author: '',
@@ -242,7 +238,7 @@ const data = [
     heroBg: 'https://loremflickr.com/1000/720/newyork',
     title: 'Media',
     since: `Regional news networks that connect people and place and the leading Business 
-    News Multiplatform, Bloomberg Línea`,
+    News Multiplatform, Bloomberg Línea.`,
     desc: '',
     quote: '',
     author: '',
@@ -270,7 +266,7 @@ const data = [
     title: 'Distribution',
     since: `Leaders in innovative distribution solutions for The United States and Latin 
     American markets, Falic Group offers a network that delivers speed, efficiency 
-    and reliability as standard`,
+    and reliability as standard.`,
     desc: '',
     quote: '',
     author: '',
@@ -296,7 +292,7 @@ const data = [
     hid: 'tobacco',
     heroBg: 'https://loremflickr.com/1000/720/newyork',
     title: 'Tobacco',
-    since: `Through Duty Free Americas, Falic Group has become a major player in the tobacco industry in the United States and Latin America`,
+    since: `Through Duty Free Americas, Falic Group has become a major player in the tobacco industry in the United States and Latin America.`,
     desc: '',
     quote: '',
     author: '',
@@ -322,7 +318,7 @@ const data = [
     hid: 'other-activities',
     heroBg: 'https://loremflickr.com/1000/720/newyork',
     title: 'Other Activities',
-    since: 'Since 1234',
+    since: 'Since 1234.',
     desc: '',
     quote: '',
     author: '',

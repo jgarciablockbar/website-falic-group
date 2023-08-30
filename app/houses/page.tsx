@@ -10,7 +10,7 @@ const data = {
     },
     {
       num: '50',
-      text: 'Enterprices'
+      text: 'Enterprises'
     },
   ],
 }
