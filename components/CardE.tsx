@@ -4,16 +4,14 @@ import Image from "next/image";
 interface Props {
   title: string;
   img: string;
-  date: ReactNode;
 }
 
-const CardE: FC<Props> = ({ title, img,  date }) => {
+const CardE: FC<Props> = ({ title, img }) => {
   return <div className='text-center'>
   <div className="h-56 relative mb-5">
-    <Image src={img} alt={title} fill />
+    <Image src={img} alt={title} fill style={{objectFit: 'cover'}} />
   </div>
   <h3>{title}</h3>
-  <h4>{date}</h4>
 </div>
 }
 
