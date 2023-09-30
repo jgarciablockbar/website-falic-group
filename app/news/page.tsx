@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { getNews } from '../lib/getNews';
-import ActiveImg from "@/components/ActiveImg";
+import { getNews } from '@/lib/getNews';
+import NewsCard from "@/components/NewsCard";
 
 export default function News() {
   const news = getNews();
@@ -15,15 +15,18 @@ export default function News() {
           <Link className="underline"href={`/news/${news[0].aid}`}>Read the article</Link>
         </div>
       </section>
-      <section>
+      <section className="flex flex-wrap">
         {news.slice(1).map((article: any, i: number) => {
-          return <Link className={`p-8 md:p-20 ${i % 2 ? 'bg-white' : 'bg-secondary'} flex flex-col gap-y-8`} href={`/news/${article.aid}`}key={article.aid}>
-            <h2>{article.title}</h2>
-            <p className="text-gray-500">{article.category}<br />{article.date}</p>
-            <div className="w-full h-v30 md:h-v50 lg:h-v90 relative">
-              <ActiveImg src={article.img} />
-            </div>
-          </Link>
+          const props = {
+            title: article.title,
+            category: article.category,
+            date: article.date,
+            img: article.img,
+            aid: article.aid,
+          }
+          return <div key={i} className={`lg:w-1/2 ${Math.floor(i / 2) + i % 2 === 0 ? 'bg-white' : 'bg-secondary'}`}>
+            <NewsCard  {...props} />
+          </div>
         }, {start:1})}
       </section>
     </main>

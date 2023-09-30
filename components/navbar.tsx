@@ -2,14 +2,13 @@
 
 import Link from "next/link";
 import Image from "next/image"
+import localFont from 'next/font/local';
 import { usePathname } from "next/navigation";
 import { FC } from "react";
 
-interface Props {
-  seeThru?: boolean;
-}
+const caslon = localFont({ src: '../public/fonts/Caslon540LTStd-Roman.woff2' });
 
-const Navbar: FC<Props> = ({ seeThru }: Props) => {
+const Navbar: FC= () => {
   const pathname = usePathname();
   const sections = [
     {
@@ -37,7 +36,7 @@ const Navbar: FC<Props> = ({ seeThru }: Props) => {
       <Link
         key={section.href}
         href={section.href}
-        className={`font-semibold text-primary underline-offset-4 transition ease-in-out duration-300 ${pathname === section.href ? "" : "no-underline"} hover:underline`}
+        className={`${caslon.className} font-semibold text-primary underline-offset-4 transition ease-in-out duration-300 ${pathname === section.href ? "" : "no-underline"} hover:underline`}
       >
         {section.title}
       </Link>
