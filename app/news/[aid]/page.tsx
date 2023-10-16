@@ -1,4 +1,4 @@
-import getArticle, { getNews } from "@/app/lib/getNews";
+import getArticle, { getNews } from "@/lib/getNews";
 import Image from "next/image";
 
 export async function generateStaticParams() {

@@ -1,6 +1,7 @@
 import HeroB from "@/components/HeroB";
-import { getHouses } from "../lib/getHouse";
-import ActiveImg from "@/components/ActiveImg";
+import getHouse, { getHouses } from "../../lib/getHouse";
+import Image from "next/image";
+import ButtonA from "@/components/ButtonA";
 
 const data = {
   hero: [
@@ -32,18 +33,27 @@ const Houses = () => {
           })}
         </div>
       </HeroB>
-      <section className='bg-white flex flex-col items-center py-20 justify-center'>
-        <div className="w-5/6 flex flex-wrap lg:w-2/3">
+      <section>
         {houses && houses.map((house, i) => {
-          return <a href={`/houses/${house.hid}`} key={house.title} className='basis-full md:basis-1/3 p-5 text-center text-primary'>
-            <div className="h-80 md:h-40 relative mb-5">
-              <ActiveImg src={house.heroBg} />
-            </div>
-            <h3>{house.title}</h3>
-            <p style={{color: 'black'}}>{house.since}</p>
-          </a>
+          const houseDetails = getHouse(house.hid);
+          return <div key={i} className={`${i % 2 === 0 ? 'bg-white' : 'bg-secondary'} flex flex-col gap-10 items-center w-full p-20`}>
+            <h2>{house.title}</h2>
+            <p className="text-center w-2/3">{house.since}</p>
+            <ButtonA href={`house/${house.hid}`}>Discover</ButtonA>
+            <ul className="flex w-full">
+              {houseDetails?.brands &&
+                houseDetails.brands.slice(0,4).map((brand: any, j) => {
+                  return <li key={j} className="w-full md:w-1/4 h-60 relative">
+                    {brand.img &&
+                      <Image src={brand.img} alt={brand.title} fill/>
+                    }
+                  </li>
+                })
+              }
+            </ul>
+          </div>
+
         })}
-        </div>
       </section>
 
     </main>

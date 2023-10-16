@@ -1,5 +1,5 @@
 import Image from "next/image";
-import getHouse, { getHouses } from "@/app/lib/getHouse";
+import getHouse, { getHouses } from "@/lib/getHouse";
 import CardE from "@/components/CardE";
 
 export async function generateStaticParams() {

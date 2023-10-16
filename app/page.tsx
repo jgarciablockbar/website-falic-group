@@ -1,16 +1,13 @@
 import Hero from "@/components/Hero"
-import CardA from "@/components/CardA"
 import CardB from "@/components/CardB"
+import NewsCard from "@/components/NewsCard";
+import { getNews } from '@/lib/getNews';
+
+const news = getNews();
 
 const content = {
   hero: {
     title: 'Sed ut perspiciatis unde omnis iste natus error sit',
-  },
-  news: {
-    title: 'The Magallan',
-    date: '24 july 2023',
-    imgSrc: '/homepage/news.webp',
-    link: '/',
   },
   houses: {
     title: 'Houses',
@@ -26,10 +23,10 @@ const content = {
   group: {
     title: 'Group',
     imgSrc: '/homepage/group.webp',
-    description: `Established in 2001, Falic Group is a family-owned and operated business home 
-    to a number of prestigious brands across nine Houses. Known for our unrivalled 
-    expertise in global markets and commitment to excellence, Falic Group is 
-    committed to growth and innovation in the name of our Houses and affiliated 
+    description: `Established in 2001, Falic Group is a family-owned and operated business home
+    to a number of prestigious brands across nine Houses. Known for our unrivalled
+    expertise in global markets and commitment to excellence, Falic Group is
+    committed to growth and innovation in the name of our Houses and affiliated
     high quality producers.`,
     links: [
       {
@@ -47,9 +44,19 @@ export default function Home() {
       <Hero bg="/homepage/hero.webp">
         <h1 className="text-center">{content.hero.title}</h1>
       </Hero>
-      <section className="p-20">
-        <h2 className="text-primary">News</h2>
-        <CardA {...content.news} />
+      <section className="flex flex-wrap">
+        {news.slice(0, 2).map((article: any, i: number) => {
+          const props = {
+            title: article.title,
+            category: article.category,
+            date: article.date,
+            img: article.img,
+            aid: article.aid,
+          }
+          return <div key={i} className={`lg:w-1/2 ${Math.floor(i / 2) + i % 2 === 0 ? 'bg-white' : 'bg-secondary'}`}>
+            <NewsCard  {...props} />
+          </div>
+        }, {start:1})}
       </section>
       <section className="flex flex-col md:flex-row">
         <div className="w-full flex bg-secondary">
