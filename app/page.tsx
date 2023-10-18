@@ -1,28 +1,29 @@
-import Hero from "@/components/Hero"
-import CardB from "@/components/CardB"
+import Hero from "@/components/Hero";
+import CardB from "@/components/CardB";
 import NewsCard from "@/components/NewsCard";
-import { getNews } from '@/lib/getNews';
+import { getNews } from "@/lib/getNews";
 
 const news = getNews();
 
 const content = {
   hero: {
-    title: 'Sed ut perspiciatis unde omnis iste natus error sit',
+    title: "Sed ut perspiciatis unde omnis iste natus error sit",
   },
   houses: {
-    title: 'Houses',
-    imgSrc: '/homepage/houses.webp',
-    description: 'Across our 9 distinguished global Houses, we proudly encapsulate a rich tapestry of heritage, boundless innovation, and unparalleled luxury.',
+    title: "Houses",
+    imgSrc: "/homepage/houses.webp",
+    description:
+      "Across our 9 distinguished global Houses, we proudly encapsulate a rich tapestry of heritage, boundless innovation, and unparalleled luxury.",
     links: [
       {
-        title: 'Learn more',
-        href: '/houses',
-      }
+        title: "Learn More",
+        href: "/houses",
+      },
     ],
   },
   group: {
-    title: 'Group',
-    imgSrc: '/homepage/group.webp',
+    title: "Falic Group",
+    imgSrc: "/homepage/group.webp",
     description: `Established in 2001, Falic Group is a family-owned and operated business home
     to a number of prestigious brands across nine Houses. Known for our unrivalled
     expertise in global markets and commitment to excellence, Falic Group is
@@ -30,33 +31,44 @@ const content = {
     high quality producers.`,
     links: [
       {
-        title: 'Find out more',
-        href: '/group',
+        title: "Discover More",
+        href: "/group",
       },
     ],
-    linkColors: 'text-secondary border-secondary hover:text-primary hover:bg-secondary',
-  }
-}
+    linkColors:
+      "text-secondary border-secondary hover:text-primary hover:bg-secondary",
+  },
+};
 
 export default function Home() {
   return (
     <main>
-      <Hero bg="/homepage/hero.webp">
-        <h1 className="text-center">{content.hero.title}</h1>
-      </Hero>
+      <Hero bg="/homepage/hero.webp" />
       <section className="flex flex-wrap">
-        {news.slice(0, 2).map((article: any, i: number) => {
-          const props = {
-            title: article.title,
-            category: article.category,
-            date: article.date,
-            img: article.img,
-            aid: article.aid,
-          }
-          return <div key={i} className={`lg:w-1/2 ${Math.floor(i / 2) + i % 2 === 0 ? 'bg-white' : 'bg-secondary'}`}>
-            <NewsCard  {...props} />
-          </div>
-        }, {start:1})}
+        {news.slice(0, 2).map(
+          (article: any, i: number) => {
+            const props = {
+              title: article.title,
+              category: article.category,
+              date: article.date,
+              img: article.img,
+              aid: article.aid,
+            };
+            return (
+              <div
+                key={i}
+                className={`lg:w-1/2 ${
+                  Math.floor(i / 2) + (i % 2) === 0
+                    ? "bg-white"
+                    : "bg-secondary"
+                }`}
+              >
+                <NewsCard {...props} />
+              </div>
+            );
+          },
+          { start: 1 }
+        )}
       </section>
       <section className="flex flex-col md:flex-row">
         <div className="w-full flex bg-secondary">
@@ -67,5 +79,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-  )
+  );
 }

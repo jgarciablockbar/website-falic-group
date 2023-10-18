@@ -3,7 +3,7 @@ import Image from "next/image";
 const positions = [
   {
     title: "Data Science Engineer, Geospatial",
-    img: "https://loremflickr.com/400/400/cats",
+    img: "https://placehold.co/400x400",
     date: "09/25/2023",
     type: "Fixed Term",
     department: "Sales_Chepi_Channel",
@@ -14,7 +14,7 @@ const positions = [
   },
   {
     title: "Data Science Engineer, Geospatial",
-    img: "https://loremflickr.com/400/400/cats",
+    img: "https://placehold.co/400x400",
     date: "09/25/2023",
     type: "Fixed Term",
     department: "Sales_Chepi_Channel",
@@ -28,12 +28,7 @@ const positions = [
 const Careers = () => {
   return (
     <main>
-      <section
-        className="h-v40 w-screen flex flex-row items-center justify-center bg-center"
-        style={{
-          backgroundImage: "url(https://loremflickr.com/1300/900/careers)",
-        }}
-      >
+      <section className="bg-black h-v40 w-screen flex flex-row items-center justify-center bg-center">
         <h1 className="text-white">Join Us</h1>
       </section>
 

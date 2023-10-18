@@ -18,15 +18,15 @@ const data = [
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
@@ -95,11 +95,11 @@ const data = [
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
@@ -149,7 +149,7 @@ const data = [
   {
     hid: "perfume-cosmetics",
     heroBg: "/houses/cosmetics-fragrance.jpg",
-    title: "Perfume & cosmetics",
+    title: "Fragrance & cosmetics",
     since: "Heritage meets vogue with our collection of iconic beauty brands.",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     quote:
@@ -165,17 +165,17 @@ const data = [
       {
         title: "e velit esse cillum dol",
         date: "Since 1234",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
         date: "Since 1234",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
         date: "Since 1234",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
@@ -247,11 +247,11 @@ const data = [
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
@@ -393,11 +393,11 @@ const data = [
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
@@ -468,11 +468,11 @@ const data = [
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
@@ -540,11 +540,11 @@ const data = [
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
@@ -612,11 +612,11 @@ const data = [
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",
-        img: "https://loremflickr.com/400/300/newyork",
+        img: "https://placehold.co/400x400",
       },
       {
         title: "e velit esse cillum dol",

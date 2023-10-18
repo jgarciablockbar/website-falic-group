@@ -46,12 +46,7 @@ const offices = [
 const Offices = () => {
   return (
     <main>
-      <section
-        className="h-v40 w-screen flex flex-row items-center justify-center bg-center"
-        style={{
-          backgroundImage: "url(https://loremflickr.com/1300/900/offices)",
-        }}
-      >
+      <section className="h-v40 bg-black w-screen flex flex-row items-center justify-center bg-center">
         <h1 className="text-white">Our Offices</h1>
       </section>
       <section className="bg-white flex flex-col items-center py-20 justify-center">
