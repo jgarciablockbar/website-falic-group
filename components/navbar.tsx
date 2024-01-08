@@ -6,7 +6,7 @@ import localFont from 'next/font/local';
 import { usePathname } from "next/navigation";
 import { FC } from "react";
 
-  const sections = [
+  export const navItems = [
     {
       href: "/group",
       title: "Group",
@@ -58,7 +58,7 @@ const Navbar: FC= () => {
         <Image src="/logo_white.svg" alt="Falic Group" height={100} width={300}  />
       </Link>
       <nav className="uppercase gap-6 hidden md:flex">
-        {sections.map(section => <NavItem key={section.title} current={pathname === section.href} href={section.href} title={section.title}/>)}
+        {navItems.map(navItem => <NavItem key={navItem.title} current={pathname === navItem.href} href={navItem.href} title={navItem.title}/>)}
       </nav>
     </div>
   );
