@@ -55,7 +55,7 @@ const Navbar: FC= () => {
   return (
     <div className="absolute w-screen flex justify-between items-start flex-row z-20 p-6">
       <Link href="/" style={{ display: "block", fontSize: 34 }}>
-        <Image src="/logo_white.svg" alt="Falic Group" width={300} height={100} />
+        <Image src="/logo_white.svg" alt="Falic Group" height={100} width={300}  />
       </Link>
       <nav className="uppercase gap-6 hidden md:flex">
         {sections.map(section => <NavItem key={section.title} current={pathname === section.href} href={section.href} title={section.title}/>)}

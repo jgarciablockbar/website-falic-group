@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getNews } from '@/lib/getNews';
-import NewsCard from "@/components/NewsCard";
+import ColCard from "@/components/ColCard";
 
 export default function News() {
   const news = getNews();
@@ -25,7 +25,7 @@ export default function News() {
             aid: article.aid,
           }
           return <div key={i} className={`lg:w-1/2 ${Math.floor(i / 2) + i % 2 === 0 ? 'bg-white' : 'bg-secondary'}`}>
-            <NewsCard  {...props} />
+            <ColCard  {...props} />
           </div>
         }, {start:1})}
       </section>

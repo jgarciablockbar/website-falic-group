@@ -64,9 +64,16 @@ body {
     padding-top: 12rem;
   }
 }
+.home-padded > div:last-child {
+  padding-bottom: 8rem;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 4rem;
+  }
+}
 
-.home-padded > div, .home-padded > div:first-child {
+.home-padded > div, .home-padded > div:first-child, .home-padded > div:last-child {
   @media screen and (min-width: 1024px) {
     padding-top: 15rem;
+    padding-bottom: 8rem;
   }
 }

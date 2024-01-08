@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import Image from "next/image";
-import CardB from "@/components/CardB";
-import NewsCard from "@/components/NewsCard";
+import ColCard from "@/components/ColCard";
+import RowCard from "@/components/RowCard";
 import { getNews } from "@/lib/getNews";
 
 const news = getNews();
@@ -33,6 +33,13 @@ const content = {
     aid: 'houses',
     btnText: "Learn more",
   },
+  foundation: {
+    title: "FALIC FAMILY FOUNDATION",
+    img: "/homepage/Foundation.webp",
+    desc: "DFA Golf Day 2023 raising $1 million to fight cancer wins ‘Best Example of Community Engagement’ Award at The Moodies 2023 Travel Journey Omnichannel Awards",
+    aid: "/foundation",
+    btnText: "Learn more",
+  }
 };
 
 export default function Home() {
@@ -41,7 +48,7 @@ export default function Home() {
       <Hero bg="/homepage/hero.webp">
         <h1 className="uppercase">{content.hero.title}</h1>
       </Hero>
-      <section className="text-white bg-primary w-full flex flex-col items-center p-8 pb-0 md:pb-0 md:p-20">
+     <section className="text-white bg-primary w-full flex flex-col items-center p-8 pb-0 md:pb-0 md:p-20">
         <h2>{content.we.title}</h2>
         <p className="text-center text-lg pb-10">{content.we.text}</p>
         <div className="relative w-full h-v20 -mb-12 md:h-v50 md:-mb-60">
@@ -67,7 +74,7 @@ export default function Home() {
                     : "bg-secondary"
                 }`}
               >
-                <NewsCard {...props} />
+                <ColCard {...props} />
               </div>
             );
           },
@@ -75,17 +82,25 @@ export default function Home() {
         )}
       </section>
       <div className="w-full bg-primary p-8 md:p-20 flex flex-col items-center">
-        <div className="relative w-full h-v20 -mt-12 md:h-v40">
+        <div className="relative w-full h-v30 -mt-44 md:h-v40">
           <Image src="/homepage/Dior.webp" alt="" fill className="object-contain" />
         </div>
       </div>
       <section className="flex flex-col md:flex-row">
-        <div className="w-full flex bg-secondary">
-          <NewsCard {...content.houses} />
-        </div>
         <div className="w-full flex bg-white">
-          <NewsCard {...content.group} />
+          <ColCard {...content.group} />
         </div>
+       <div className="w-full flex bg-secondary">
+          <ColCard {...content.houses} />
+        </div>
+      </section>
+      <section className="bg-primary">
+        <RowCard {...content.foundation} />
+      </section>
+      <section className="text-center text-xl p-8 md:p-20 text-white" style={{ backgroundImage: 'url(/homepage/JeromeQuote.webp)' }}>
+        <p className="mb-8">“As a group, we are committed to forging the best brand partnerships and delivering results at scale. Our experience founding Duty Free Americas has taught us a lot about fast growth and innovation, and we are committed to delivering the best deals and exposure for our partners. One of the great privileges we have is to be able to give back to causes close to our heart, and with the Falic Family Foundation we support a number of charitable organizations in the United States and internationally.”</p>
+      <p className="uppercase">-Jerome Falic</p>
+      <p className="font-montserrat font-thin text-sm">DFA CEO & PRINCIPAL OF FALIC FAMILY FOUNDATION</p>
       </section>
     </main>
   );
