@@ -17,7 +17,7 @@ const Article = ({ params: { aid }}: Params) => {
 
   if (!article) return <div>Nothing to see here</div>
 
-  return <main>
+  return <>
     <section className='flex flex-col text-center items-center'>
       <h1 className="w-3/4 mt-20">{article.title}</h1>
       <h2 className="text-gray-500 mb-20">{article.category} • {article.date}</h2>
@@ -27,7 +27,7 @@ const Article = ({ params: { aid }}: Params) => {
       <div className="w-5/6 bg-white p-20 flex flex-col gap-y-20 items-center text-left font-xl" dangerouslySetInnerHTML={{__html: article.desc}}>
       </div>
     </section>
-  </main>
+  </>
 }
 
 export default Article;

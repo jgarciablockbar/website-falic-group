@@ -8,7 +8,7 @@ interface Props {
   alignment: boolean;
 }
 
-const CardC: FC<Props> = ({ img, title, description, alignment }) => {
+const RowCard: FC<Props> = ({ img, title, description, alignment }) => {
   return <div className={`w-full flex flex-col ${alignment ? "lg:flex-row" : 'lg:flex-row-reverse'}`}>
     <div className="w-full lg:w-1/2 h-80">
       <ActiveImg src={img} />
@@ -22,4 +22,4 @@ const CardC: FC<Props> = ({ img, title, description, alignment }) => {
   </div>
 }
 
-export default CardC;
+export default RowCard;

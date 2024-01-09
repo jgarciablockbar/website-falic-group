@@ -27,7 +27,7 @@ const positions = [
 
 const Careers = () => {
   return (
-    <main>
+    <>
       <section className="bg-black h-v40 w-screen flex flex-row items-center justify-center bg-center">
         <h1 className="text-white">Join Us</h1>
       </section>
@@ -106,7 +106,7 @@ const Careers = () => {
           ))}
         </ul>
       </section>
-    </main>
+    </>
   );
 };
 

@@ -3,7 +3,7 @@ const data = [
     hid: "retail",
     heroBg: "/houses/retail/panda.jpg",
     title: "Retail",
-    since: `Combining legacy and innovation, Duty Free Americas is our mothership, our future is our 
+    since: `Combining legacy and innovation, Duty Free Americas is our mothership, our future is our
     digital retail innovations, including BlockBar and Paneco.`,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     quote:
@@ -228,7 +228,7 @@ const data = [
     hid: "fashion-and-interiors",
     heroBg: "/houses/fashion-and-interiors/Pitaro-Hecht-Showroom.jpg",
     title: "Fashion & Interiors",
-    since: `Falic Fashion Group is home to legacy names focused on exceptional 
+    since: `Falic Fashion Group is home to legacy names focused on exceptional
     craftmanship, innovation and high-end design.`,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     quote:
@@ -302,7 +302,7 @@ const data = [
     hid: "real-estate-and-hospitality",
     heroBg: "/houses/real-estate/IMG_0117.jpg",
     title: "Real Estate & Hospitality",
-    since: `Falic Group owns a number of hotels in the United States and Latin America 
+    since: `Falic Group owns a number of hotels in the United States and Latin America
     including the W Hotel Panama. A place to meet, rest and play.`,
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     quote:
@@ -375,7 +375,7 @@ const data = [
     hid: "media",
     heroBg: "https://loremflickr.com/1000/720/newyork",
     title: "Media",
-    since: `Regional news networks that connect people and place and the leading Business 
+    since: `Regional news networks that connect people and place and the leading Business
     News Multiplatform, Bloomberg Línea.`,
     desc: "",
     quote: "",
@@ -448,8 +448,8 @@ const data = [
     hid: "distribution",
     heroBg: "https://loremflickr.com/1000/720/newyork",
     title: "Distribution",
-    since: `Leaders in innovative distribution solutions for The United States and Latin 
-    American markets, Falic Group offers a network that delivers speed, efficiency 
+    since: `Leaders in innovative distribution solutions for The United States and Latin
+    American markets, Falic Group offers a network that delivers speed, efficiency
     and reliability as standard.`,
     desc: "",
     quote:

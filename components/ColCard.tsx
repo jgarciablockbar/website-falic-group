@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FC } from 'react';
-import ActiveImg from "./ActiveImg";
+import Image from "next/image";
 import ButtonA from "./ButtonA";
 
 interface Props {
@@ -18,15 +18,16 @@ const ColCard: FC<Props> = ({title, category, date, img, aid, desc, btnText}: Pr
 
   return (
     <div className="p-8 md:p-20">
-      <Link className="flex flex-col gap-y-4 mb-10" href={link}>
-        <div className="w-full h-v30 md:h-v60 relative">
-          <ActiveImg src={img} />
-        </div>
+      <Link className="flex flex-col gap-y-4" href={link}>
+        <Image className="w-full h-auto" src={img} alt={title} height="334" width="763" />
         <h3>{title}</h3>
         {category && date && <p className="text-gray-500">{category}<br />{date}</p>}
         {desc && <p>{desc}</p>}
       </Link>
-      {btnText && <ButtonA  href={link}>{btnText}</ButtonA>}
+      {btnText &&
+        <div className="mt-10">
+          <ButtonA  href={link}>{btnText}</ButtonA>
+        </div>}
     </div>
   );
 }

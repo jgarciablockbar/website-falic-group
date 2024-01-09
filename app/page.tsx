@@ -44,7 +44,7 @@ const content = {
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero bg="/homepage/hero.webp">
         <h1 className="uppercase">{content.hero.title}</h1>
       </Hero>
@@ -94,7 +94,7 @@ export default function Home() {
           <ColCard {...content.houses} />
         </div>
       </section>
-      <section className="bg-primary">
+      <section className="bg-primary text-white">
         <RowCard {...content.foundation} />
       </section>
       <section className="text-center text-xl p-12 md:pt-28 md:pb-20 text-white" style={{ backgroundImage: 'url(/homepage/JeromeQuote.webp)' }}>
@@ -102,6 +102,6 @@ export default function Home() {
         <p className="uppercase">-Jerome Falic</p>
         <p className="font-montserrat font-thin text-sm">DFA CEO & PRINCIPAL OF FALIC FAMILY FOUNDATION</p>
       </section>
-    </main>
+    </>
   );
 }
