@@ -99,8 +99,8 @@ export default function Home() {
       </section>
       <section className="text-center text-xl p-12 md:pt-28 md:pb-20 text-white" style={{ backgroundImage: 'url(/homepage/JeromeQuote.webp)' }}>
         <p className="mb-8">“As a group, we are committed to forging the best brand partnerships and delivering results at scale. Our experience founding Duty Free Americas has taught us a lot about fast growth and innovation, and we are committed to delivering the best deals and exposure for our partners. One of the great privileges we have is to be able to give back to causes close to our heart, and with the Falic Family Foundation we support a number of charitable organizations in the United States and internationally.”</p>
-      <p className="uppercase">-Jerome Falic</p>
-      <p className="font-montserrat font-thin text-sm">DFA CEO & PRINCIPAL OF FALIC FAMILY FOUNDATION</p>
+        <p className="uppercase">-Jerome Falic</p>
+        <p className="font-montserrat font-thin text-sm">DFA CEO & PRINCIPAL OF FALIC FAMILY FOUNDATION</p>
       </section>
     </main>
   );
