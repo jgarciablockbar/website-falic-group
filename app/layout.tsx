@@ -7,7 +7,6 @@ export const metadata = {
   title: 'Falic Group',
   description: 'Falic Group',
 }
-
 export default function RootLayout({
   children,
 }: {
