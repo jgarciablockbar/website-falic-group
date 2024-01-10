@@ -9,7 +9,7 @@ const data = [
   },
   {
     aid: "sample-2",
-    img: "/news/news-1.webp",
+    img: "/news/news-2.webp",
     title: "Wines & Spirits",
     category: "",
     date: "",

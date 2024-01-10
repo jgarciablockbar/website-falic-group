@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getNews } from '@/lib/getNews';
 import ColCard from "@/components/ColCard";
 import Hero from "@/components/Hero";
