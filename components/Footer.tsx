@@ -20,11 +20,11 @@ const Footer = () => {
   </ul>
  );
 
-  return <section className="flex flex-col py-8 lg:py-20">
+  return <section className="flex flex-col py-8 lg:py-20 bg-secondary">
     <Image src="/footer.webp" height="381" width="1200"  alt="Falic Group" className="w-full max-w-full h-full" />
     <div className="flex flex-col lg:flex-row justify-between gap-8  pt-8 px-8 lg:pt-10 lg:px-20 items-center text-sm">
       <div className="flex flex-row flex-wrap gap-x-12">
-        <Image src="/logo.svg" height="65" width="246" alt="Falic Group" className="mb-10 lg:mb-0" />
+        <Image src="/logo.svg" height="65" width="246" alt="Falic Group" className="mb-10 lg:mb-0 h-auto w-auto" />
         <RenderNavItems start={0} end={3} />
         <RenderNavItems start={3} end={6} />
       </div>
