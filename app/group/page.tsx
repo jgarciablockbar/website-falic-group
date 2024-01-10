@@ -78,7 +78,7 @@ export default function Group() {
           Our Values
         </h2>
         {values.map((value, i) => (
-          <RowCardFW key={value.title} {...value} alignment={i % 2}/>
+          <RowCardFW key={value.title} {...value} alignment={!!(i % 2)}/>
         ))}
       </section>
     </>
