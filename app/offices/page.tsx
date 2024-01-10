@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import RowCard from "@/components/RowCard";
+import Image from "next/image";
 
 const offices = [
   {
@@ -79,12 +80,15 @@ const Offices = () => {
       </section>
       <section className="bg-primary flex flex-col justify-center overflow-hidden relative p-8 lg:p-20">
         <h2 className="bg-secondary w-full text-center py-10 font-montserrat font-semibold">Worldwide locations</h2>
-        <ul className="flex flex-wrap bg-secondary w-full p-8 pt-0 lg:p-20 lg:pt-0">
+        <ul className="flex flex-wrap bg-secondary w-full px-8 pb-6 md:pb-16 lg:pb-28 lg:px-20">
           <RenderItems start={0} end={5} />
           <RenderItems start={5} end={10} />
           <RenderItems start={10} end={15} />
         </ul>
       </section>
+      <div className="-mt-14 md:-mt-24 lg:-mt-40 w-2/3 mx-auto relative">
+        <Image src="/offices/store.webp" height="370" width="787" alt="" className="w-full h-auto z-10" />
+      </div>
     </>
   );
 };
