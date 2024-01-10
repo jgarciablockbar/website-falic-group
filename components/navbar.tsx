@@ -2,15 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image"
-import localFont from 'next/font/local';
 import { usePathname } from "next/navigation";
 import { FC } from "react";
 
-const caslon = localFont({ src: '../public/fonts/Caslon540LTStd-Roman.woff2' });
-
-const Navbar: FC= () => {
-  const pathname = usePathname();
-  const sections = [
+  export const navItems = [
     {
       href: "/group",
       title: "Group",
@@ -31,24 +26,41 @@ const Navbar: FC= () => {
       href: "/careers",
       title: "Careers",
     },
+    {
+      href: "/foundation",
+      title: "Foundation",
+    },
   ];
-  const NavItems = () => sections.map((section) => (
-      <Link
-        key={section.href}
-        href={section.href}
-        className={`${caslon.className} font-semibold text-primary underline-offset-4 transition ease-in-out duration-300 ${pathname === section.href ? "" : "no-underline"} hover:underline`}
-      >
-        {section.title}
-      </Link>
-    ));
+
+  interface NavItemsProps {
+    href: string;
+    title: string;
+    current: boolean;
+  }
+
+  const NavItem = ({ href, title, current }: NavItemsProps) => (
+    <Link
+      key={href}
+      href={href}
+      className={`font-semibol underline-offset-4 ${current ? "underline" : ""} hover:underline`}
+    >
+      {title}
+    </Link>
+  );
+
+
+const Navbar: FC= () => {
+  const pathname = usePathname();
+  const isArticleRegex = /^\/news\/.+$/;
+  const isArticle = isArticleRegex.test(pathname);
 
   return (
-    <div className="relative bg-white pb-6 w-screen flex justify-center items-center flex-col z-20 pt-6">
+    <div className={`${isArticle ? 'bg-white' : 'absolute' } w-screen flex justify-between items-start flex-row z-20 p-6`}>
       <Link href="/" style={{ display: "block", fontSize: 34 }}>
-        <Image src="/logo.png" alt="Falic Group" width={300} height={100} />
+        <Image src={isArticle ? "/logo.svg" : "/logo_white.svg"} alt="Falic Group" height={100} width={300} className="h-auto w-auto" />
       </Link>
-      <nav className="uppercase mt-6 mb-0 gap-10 hidden md:flex">
-        <NavItems />
+      <nav className={`uppercase gap-6 hidden lg:flex ${isArticle ? "text-black" : "text-white"}`}>
+        {navItems.map(navItem => <NavItem key={navItem.title} current={pathname === navItem.href} href={navItem.href} title={navItem.title} />)}
       </nav>
     </div>
   );
