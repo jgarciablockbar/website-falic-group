@@ -38,7 +38,7 @@ const Careers = () => {
       </Hero>
 
       <section className="bg-primary text-white flex flex-col gap-8 items-center py-20 justify-center">
-        <h3>Fast-paced, disruptive and family-oriented.</h3>
+        <h3 className="p-8 md:p-20 text-center">Fast-paced, disruptive and family-oriented.</h3>
         <p className="w-5/6 lg:w-2/3 text-lg text-center">
           That&apos;s how we describe ourselves at Falic Group. If you&apos;re a dynamic team player looking to exceed your potential, we want to hear from you.
         </p>
@@ -49,7 +49,7 @@ const Careers = () => {
 
       <section className="bg-secondary p-10 pb-0 md:p-20 md:pb-0 flex flex-col items-center">
         <h3 className="flex text-center border-black border-b-2 leading-8 mb-8">Career opportunities</h3>
-        <ul className="flex">
+        <ul className="flex flex-col lg:flex-row gap-y-3">
           {positions.map((position, i) => (
             <li
               key={i}

@@ -64,7 +64,7 @@ const Offices = () => {
     {offices && offices.slice(start, end).map((office, i) => (
       <li
         key="i"
-        className="h-12 md:h-16 text-center px-4 text-lg"
+        className="h-16 text-center px-4 text-lg"
       >{office.city}</li>
     ))}
   </ul>
@@ -80,7 +80,7 @@ const Offices = () => {
       </section>
       <section className="bg-primary flex flex-col justify-center overflow-hidden relative p-8 lg:p-20">
         <h2 className="bg-secondary w-full text-center py-10 font-montserrat font-semibold">Worldwide locations</h2>
-        <ul className="flex flex-wrap bg-secondary w-full px-8 pb-6 md:pb-16 lg:pb-28 lg:px-20">
+        <ul className="flex flex-wrap bg-secondary w-full px-4 md:px-8 pb-6 md:pb-16 lg:pb-28 lg:px-20">
           <RenderItems start={0} end={5} />
           <RenderItems start={5} end={10} />
           <RenderItems start={10} end={15} />
