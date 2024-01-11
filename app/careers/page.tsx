@@ -49,7 +49,7 @@ const Careers = () => {
 
       <section className="bg-secondary p-10 pb-0 md:p-20 md:pb-0 flex flex-col items-center">
         <h3 className="flex text-center border-black border-b-2 leading-8 mb-8">Career opportunities</h3>
-        <ul className="flex">
+        <ul className="flex flex-col lg:flex-row gap-y-3">
           {positions.map((position, i) => (
             <li
               key={i}

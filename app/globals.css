@@ -82,3 +82,8 @@ h3 {
     padding-bottom: 8rem;
   }
 }
+.fixedDom {
+  height: 100vh;
+  overflow: hidden;
+  max-height: 100vh;
+}
