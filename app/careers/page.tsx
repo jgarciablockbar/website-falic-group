@@ -38,7 +38,7 @@ const Careers = () => {
       </Hero>
 
       <section className="bg-primary text-white flex flex-col gap-8 items-center py-20 justify-center">
-        <h3>Fast-paced, disruptive and family-oriented.</h3>
+        <h3 className="p-8 md:p-20 text-center">Fast-paced, disruptive and family-oriented.</h3>
         <p className="w-5/6 lg:w-2/3 text-lg text-center">
           That&apos;s how we describe ourselves at Falic Group. If you&apos;re a dynamic team player looking to exceed your potential, we want to hear from you.
         </p>
