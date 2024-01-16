@@ -103,8 +103,8 @@ export default function Home() {
       <section className="bg-primary text-white">
         <RowCard {...content.foundation} />
       </section>
-      <section className="text-center text-xl text-white" style={{ backgroundImage: 'url(./homepage/JeromeQuote.webp)', backgroundSize: 'cover' }}>
-        <div className="p-12 md:pt-28 md:pb-20 bg-accent/70 flex items-center flex-col">
+      <section className="text-center text-xl">
+        <div className="p-12 md:pt-28 md:pb-20 bg-secondary flex items-center flex-col">
           <p className="mb-8 max-w-screen-md">“As a group, we are committed to forging the best brand partnerships and delivering results at scale. Our experience founding Duty Free Americas has taught us a lot about fast growth and innovation. One of the great privileges we have is to be able to give back to causes close to our heart, and with the Falic Family Foundation we support a number of charitable organisations in the United States and internationally, making a real difference to diverse communities”</p>
           <p className="uppercase">-Jerome Falic</p>
           <p className="font-montserrat font-thin text-sm">DFA CEO & PRINCIPAL OF FALIC FAMILY FOUNDATION</p>
