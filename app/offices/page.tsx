@@ -31,7 +31,7 @@ const offices = [
     city: "Paris, France",
   },
   {
-    city: "Punta cana, Dominican Republic",
+    city: "Punta Cana, Dominican Republic",
   },
   {
     city: "Rio de Janeiro, Brazil",
@@ -49,7 +49,7 @@ const offices = [
 
 const where = {
   title: "Where are we?",
-  desc: "Falic Group is headquartered in Miami, Florida, and has offices in New York, Los Angeles, London, Panama City, Singapore, San Juan, Macau, Rio de Janeiro, Montevideo, Tel Aviv, Bogota, Punta Cana, Mexico City and Paris. The group employs over 6,000 people worldwide.",
+  desc: "Falic Group is headquartered in Miami, Florida, and has offices in Bogota, London, Los Angeles, Macau, Mexico City, Montevideo, New York, Panama City, Paris, Punta Cana, Rio de Janeiro, San Juan, Singapore, and Tel Aviv. The group employs over 6,000 people worldwide.",
   img: "/offices/building.webp",
   reverse: true,
 }
