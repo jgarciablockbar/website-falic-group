@@ -15,7 +15,7 @@ const data = {
   houses: [
     {
       title: "Retail",
-      desc: "CCombining legacy and innovation, Duty Free Americas is our mothership. As the leading and largest luxury travel retailer in the Western Hemisphere, DFA operates e-Commerce and over 250 stores in the United States and internationally at major airports, seaports and borders. Our future is our digital retail innovations BlockBar, a global blockchain based wines and spirits marketplace and Paneco, the first ever wines and spirits delivery service in Israel and Singapore",
+      desc: "Combining legacy and innovation, Duty Free Americas is our mothership. As the leading and largest luxury travel retailer in the Western Hemisphere, DFA operates e-Commerce and over 250 stores in the United States and internationally at major airports, seaports and borders. Our future is our digital retail innovations BlockBar, a global blockchain based wines and spirits marketplace and Paneco, the largest e-commerce delivery platform in Singapore and Israel",
       images: [
         "/houses/retail-1.webp",
         "/houses/retail-2.webp",
@@ -60,7 +60,7 @@ const data = {
     },
     {
       title: "Media",
-      desc: "Falic Group proudly operates a number of leading regional news networks that connect people, place and business. The largest network includes Bloomberg Línea partnering with the world’s largest llifestyle brands to share their campaigns to 5 million+ users and 1M +social media followers across LATAM.",
+      desc: "Falic Group proudly operates a number of leading regional news networks that connect people, place and business. The largest network includes Bloomberg Línea partnering with the world’s largest lifestyle brands to share their campaigns to 5 million+ users and 1M +social media followers across LATAM.",
       images: [
         "/houses/media-1.webp",
         "/houses/media-2.webp",

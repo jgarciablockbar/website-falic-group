@@ -57,12 +57,14 @@ export default function Group() {
           <p className="font-montserrat font-thin text-sm">DFA CEO & PRINCIPAL OF FALIC FAMILY FOUNDATION</p>
         </div>
       </section>
-      <section className="bg-primary flex flex-wrap p-8 lg:p-20">
-        {events && events.map(event => (
-          <div key={event.title} className="w-full md:w-1/2 lg:w-1/3">
-            <EventCard {...event} />
-          </div>
-        ))}
+      <section className="bg-primary flex justify-center p-8 lg:p-20">
+        <div className="max-w-screen-xl flex flex-wrap">
+          {events && events.map(event => (
+            <div key={event.title} className="w-full md:w-1/2 lg:w-1/3">
+              <EventCard {...event} />
+            </div>
+          ))}
+        </div>
       </section>
     </>
   );
