@@ -8,7 +8,7 @@ const data = {
       text: "Houses",
     },
     {
-      num: "50",
+      num: "50+",
       text: "Businesses",
     },
   ],
