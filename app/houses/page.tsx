@@ -15,7 +15,7 @@ const data = {
   houses: [
     {
       title: "Retail",
-      desc: "Combining legacy and innovation, Duty Free Americas is our mothership. As the leading and largest luxury travel retailer in the Western Hemisphere, DFA operates e-Commerce and over 250 stores in the United States and internationally at major airports, seaports and borders. Our future is our digital retail innovations BlockBar, a global blockchain based wines and spirits marketplace and Paneco, the largest e-commerce delivery platform in Singapore and Israel",
+      desc: "Combining legacy and innovation, Duty Free Americas is our mothership. As the leading and largest luxury travel retailer in the Western Hemisphere, DFA operates e-Commerce and over 250 stores in the United States and internationally at major airports, seaports and borders. Our future is our digital retail innovations BlockBar, a global blockchain based wines and spirits marketplace and Paneco, the largest e-commerce delivery platform in Singapore and Israel.",
       images: [
         "/houses/retail-1.webp",
         "/houses/retail-2.webp",
