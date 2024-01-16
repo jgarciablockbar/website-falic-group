@@ -15,17 +15,17 @@ const stats = [
     year: "",
   },
   {
-    stat: "+250",
+    stat: "250+",
     desc: "Stores",
     year: "",
   },
   {
-    stat: "+5",
+    stat: "5+",
     desc: "Ecommerce",
     year: "",
   },
   {
-    stat: "+6,000",
+    stat: "6,000+",
     desc: "Employees",
     year: "",
   },
