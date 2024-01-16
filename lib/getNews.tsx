@@ -13,7 +13,7 @@ const data = [
     title: "Wines & Spirits",
     category: "",
     date: "",
-    desc: 'Sotheby’s worldwide chairman of wines and spirits joins BlockBar.',
+    desc: 'Sotheby’s Worldwide Chairman of Wines & Spirits for 32 years joins BlockBar. ',
   },
   {
     aid: "sample-3",
@@ -45,7 +45,7 @@ const data = [
     title:"Retail",
     category: "",
     date: "",
-    desc: 'Visa and Duty Free Americas partner to provide exclusive benefits to travelers.',
+    desc: 'Visa and Duty Free Americas partner to provide exclusive benefits to travellers.',
   },
 ];
 

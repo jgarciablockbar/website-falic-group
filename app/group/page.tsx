@@ -38,12 +38,12 @@ const values = [
   {
     img: "/group/visionary.webp",
     title: "Visionary & Growth",
-    description: `Combining visionary spirit with a fast-paced growth mindset, Falic Group is focused on developing future-proof business strategies and new revenue streams. Our business strategies are carefully designed to target a new breed of young luxury consumers, a group that is projected to make up 80% of global purchases by 2030.`,
+    description: `Combining visionary spirit with a fast-paced growth mindset, Falic Group is focused on developing future-proof business strategies and new revenue streams, <b>from the Western Hemisphere to Asia</b>. Our business strategies are carefully designed to target a new breed of young luxury consumers, a group that is projected to make up 80% of global purchases by 2030*.<br/><b>*Bain & Company Report, 2023</b>`,
   },
   {
     img: "/group/excellence.webp",
     title: "Commitment to Excellence",
-    description: `By making strategic developments in modern technology and digital innovations, Falic Group aims to always be one step ahead to disrupt traditional markets. Omnichannel experiences and partnerships with world-class retailers, distributors and talent is part of our commitment to excellence.`,
+    description: `By making strategic developments in modern technology and digital innovations, Falic Group aims to always be one step ahead to disrupt traditional markets. Omnichannel experiences and partnerships with world-class <b>brands</b>, distributors and talent is part of our commitment to excellence.`,
   },
 ];
 
@@ -52,6 +52,8 @@ export default function Group() {
     <>
       <Hero bg="/homepage/hero.webp">
         <h1>The Group</h1>
+        <p className="text-xs sm:text-base text-center max-w-screen-xl">Falic Group, founded in 2001 by brothers Jerome, Leon, and Simon Falic, has grown into a leading force in luxury. Starting with Duty Free Americas, now the largest travel retailer in the Western Hemisphere, the group has expanded into nine diverse sectors, launching over 50 successful businesses and becoming a trusted partner for the world&apos;s leading luxury brands. Now in its second generation, the Falic family continues to drive the group&apos;s global success, renowned for its unparalleled expertise in global markets and commitment to innovation, fast growth and excellence. As a family devoted to philanthropy, the Falic Family Foundation is steadfast in its commitment to making a meaningful impact on global communities.
+</p>
         <div className="hidden lg:flex justify-around flex-wrap gap-10 px-10 absolute w-full bottom-10">
           {stats.map((s) => (
             <div key={s.desc} className="flex flex-col items-center">

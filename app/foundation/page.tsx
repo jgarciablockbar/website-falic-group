@@ -45,12 +45,12 @@ export default function Group() {
   return (
     <>
       <Hero bg="/foundation/hero.webp">
-        <h1>The Foundation</h1>
+        <h1>Falic Family Foundation</h1>
       </Hero>
       <section className="bg-secondary p-10 md:p-20 flex flex-col gap-y-10 text-center items-center">
         <Image src="/foundation/icon.webp" height="164" width="179" alt="The Falic Foundation" />
         <p className="w-full text-center md:w-5/6 text-xl">
-        &ldquo;As a group, we are committed to forging the best brand partnerships and delivering results at scale. Our experience founding Duty Free Americas has taught us a lot about fast growth and innovation, and we are committed to delivering the best deals and exposure for our partners. One of the great privileges we have is to be able to give back to causes close to our heart, and with the Falic Family Foundation we support a number of charitable organizations in the United States and internationally.&rdquo;
+        &ldquo;As a group, we are committed to forging the best brand partnerships and delivering results at scale. Our experience founding Duty Free Americas has taught us a lot about fast growth and innovation. One of the great privileges we have is to be able to give back to causes close to our heart, and with the Falic Family Foundation we support a number of charitable organisations in the United States and internationally, making a real difference to diverse communities&rdquo;
         </p>
         <div>
           <p className="uppercase">-Jerome Falic</p>

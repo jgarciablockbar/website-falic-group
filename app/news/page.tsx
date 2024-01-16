@@ -36,10 +36,12 @@ export default function News() {
             title: article.title,
             desc: truncatedDesc(article.desc),
             img: article.img,
-            aid: article.aid,
           }
-          return <div key={i} className={`w-full lg:w-1/2 ${getBg(i)}`}>
-            <ColCard  {...props} />
+          return <div key={i} className={`flex w-full lg:w-1/2 ${getBg(i)}  ${i % 2 === 0  ? "lg:justify-end" : "lg:justify-start"
+          }`}>
+            <div className={`flex lg:max-w-screen-sm`}>
+              <ColCard  {...props} />
+            </div>
           </div>
         }, {start:1})}
       </section>
