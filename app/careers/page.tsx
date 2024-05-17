@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Hero from "@/components/Hero";
 import ButtonB from "@/components/ButtonB";
-import Link from "next/link";
 
 const positions = [
   {
@@ -49,25 +47,21 @@ const Careers = () => {
 
       <section className="bg-secondary p-10 pb-0 md:p-20 md:pb-0 flex flex-col items-center">
         <h3 className="flex text-center border-black border-b-2 leading-8 mb-8">Career opportunities</h3>
-        <ul className="flex flex-col lg:flex-row gap-y-3 w-full max-w-screen-xl">
+        {/* <ul className="flex flex-col lg:flex-row gap-y-3 w-full max-w-screen-xl">
           {positions.map((position, i) => (
             <li
               key={i}
               className="w-full lg:w-1/3 flex flex-col"
             >
               <div className="bg-primary text-white px-6 py-20 mx-2 text-center font-montserrat">
-                {/* <h3 className="text-sm" >{position.title}</h3>
-                <hr className="mx-12 my-4" />
-                <p className="text-xs mb-4 font-montserrat" style={{ fontSize: '12px'}}>
-                  {position.type} - {position.department} - {position.location}
-                </p> */}
                 <ButtonB href="/careers">{position.btnText}</ButtonB>
-                {/* <p className="mt-4 font-montserrat" style={{ fontSize: '12px'}}>{position.date}</p> */}
               </div>
             </li>
           ))}
-        </ul>
-        {/* <Link href="/careers" className="underline font-montserrat uppercase pt-8 font-semibold text-xs hover:text-primary">See more</Link> */}
+        </ul> */}
+        <p>
+          LOOKING FOR A CAREER WITH FALIC GROUP? CONTACT US AT <a href="mailto:hello@falicgroup.com" className="underline uppercase font-semibold hover:text-primary">HELLO@FALICGGROUP.COM</a>
+        </p>
       </section>
     </>
   );

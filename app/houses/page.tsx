@@ -69,7 +69,7 @@ const data = {
     },
     {
       title: "Distribution",
-      desc: "Leaders in innovative distribution solutions for the United States and Latin American markets, Falic Group offers a network that delivers speed, efficiency and reliability as standard. The distribution group includes UETA Ship Supply, bringing together suppliers and cruise line operators.",
+      desc: "Leaders in innovative distribution solutions for the United States and Latin American markets, Falic Group holds more than 30 distribution centres across 4  continents, not only in duty free, but supplying duty paid operations, retail goods, fashion, furniture, alcohol distribution, cruise ships and fragrances.",
       images: [
         "/houses/distribution-1.webp",
         "/houses/distribution-2.webp",
